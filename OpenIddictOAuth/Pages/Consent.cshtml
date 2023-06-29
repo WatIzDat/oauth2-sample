@@ -1,0 +1,12 @@
+﻿@page
+@model OpenIddictOAuth.Pages.ConsentModel
+@{
+}
+
+Consent
+Redirect url: @Model.ReturnUrl
+
+<form method="post">
+    <input type="submit" name="grant" value="@AuthorizationConstants.GrantAccessValue" />
+    <input type="submit" name="grant" value="@AuthorizationConstants.DenyAccessValue" />
+</form>
